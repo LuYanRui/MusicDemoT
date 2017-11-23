@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@mipmap/login" />
+    <!--android:lines="1"-->
+    <EditText
+        android:id="@+id/editText_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:inputType="textPersonName"
+        android:hint="请输入用户名"/>
+
+    <EditText
+        android:id="@+id/editText_paw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/editText_user"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="13sp"
+        android:hint="请输入密码"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_paw"
+        android:layout_alignStart="@+id/editText_paw"
+
+        android:layout_below="@+id/editText_paw"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/btn_login_normal"
+        android:onClick="ExitApp"
+        android:text="退出" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+
+        android:layout_alignEnd="@+id/editText_paw"
+        android:layout_alignRight="@+id/editText_paw"
+        android:background="@drawable/btn_login_normal"
+        android:onClick="LoginApp"
+        android:text="登陆" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="16dp"
+        android:text="记住密码"
+        android:textSize="13sp" />
+
+</RelativeLayout>
